@@ -1,0 +1,286 @@
+--------Times of operations:0-------
+[state]:
+5 0 END
+[symbol]:
+NUM END
+[input]:
++ NUM * NUM + + NUM NUM END 
+[action]
+SHIFT 5
+--------Times of operations:1-------
+[state]:
+3 0 END
+[symbol]:
+F END
+[input]:
++ NUM * NUM + + NUM NUM END 
+[action]
+REDUCE by F->NUM 
+--------Times of operations:2-------
+[state]:
+2 0 END
+[symbol]:
+T END
+[input]:
++ NUM * NUM + + NUM NUM END 
+[action]
+REDUCE by T->F 
+--------Times of operations:3-------
+[state]:
+1 0 END
+[symbol]:
+E END
+[input]:
++ NUM * NUM + + NUM NUM END 
+[action]
+REDUCE by E->T 
+--------Times of operations:4-------
+[state]:
+6 1 0 END
+[symbol]:
++ E END
+[input]:
+NUM * NUM + + NUM NUM END 
+[action]
+SHIFT 6
+--------Times of operations:5-------
+[state]:
+5 6 1 0 END
+[symbol]:
+NUM + E END
+[input]:
+* NUM + + NUM NUM END 
+[action]
+SHIFT 5
+--------Times of operations:6-------
+[state]:
+3 6 1 0 END
+[symbol]:
+F + E END
+[input]:
+* NUM + + NUM NUM END 
+[action]
+REDUCE by F->NUM 
+--------Times of operations:7-------
+[state]:
+11 6 1 0 END
+[symbol]:
+T + E END
+[input]:
+* NUM + + NUM NUM END 
+[action]
+REDUCE by T->F 
+--------Times of operations:8-------
+[state]:
+8 11 6 1 0 END
+[symbol]:
+* T + E END
+[input]:
+NUM + + NUM NUM END 
+[action]
+SHIFT 8
+--------Times of operations:9-------
+[state]:
+5 8 11 6 1 0 END
+[symbol]:
+NUM * T + E END
+[input]:
++ + NUM NUM END 
+[action]
+SHIFT 5
+--------Times of operations:10-------
+[state]:
+13 8 11 6 1 0 END
+[symbol]:
+F * T + E END
+[input]:
++ + NUM NUM END 
+[action]
+REDUCE by F->NUM 
+--------Times of operations:11-------
+[state]:
+11 6 1 0 END
+[symbol]:
+T + E END
+[input]:
++ + NUM NUM END 
+[action]
+REDUCE by T->T * F 
+--------Times of operations:12-------
+[state]:
+1 0 END
+[symbol]:
+E END
+[input]:
++ + NUM NUM END 
+[action]
+REDUCE by E->E + T 
+--------Times of operations:13-------
+[state]:
+6 1 0 END
+[symbol]:
++ E END
+[input]:
++ NUM NUM END 
+[action]
+SHIFT 6
+--------Times of operations:14-------
+[state]:
+5 6 1 0 END
+[symbol]:
+NUM + E END
+[input]:
++ NUM NUM END 
+[action]
+ERROR:缺少运算对象
+SOLUTION:把一个假象的NUM压入栈
+
+--------Times of operations:15-------
+[state]:
+3 6 1 0 END
+[symbol]:
+F + E END
+[input]:
++ NUM NUM END 
+[action]
+REDUCE by F->NUM 
+--------Times of operations:16-------
+[state]:
+11 6 1 0 END
+[symbol]:
+T + E END
+[input]:
++ NUM NUM END 
+[action]
+REDUCE by T->F 
+--------Times of operations:17-------
+[state]:
+1 0 END
+[symbol]:
+E END
+[input]:
++ NUM NUM END 
+[action]
+REDUCE by E->E + T 
+--------Times of operations:18-------
+[state]:
+6 1 0 END
+[symbol]:
++ E END
+[input]:
+NUM NUM END 
+[action]
+SHIFT 6
+--------Times of operations:19-------
+[state]:
+5 6 1 0 END
+[symbol]:
+NUM + E END
+[input]:
+NUM END 
+[action]
+SHIFT 5
+--------Times of operations:20-------
+[state]:
+3 6 1 0 END
+[symbol]:
+F + E END
+[input]:
+NUM END 
+[action]
+REDUCE by F->NUM 
+--------Times of operations:21-------
+[state]:
+11 6 1 0 END
+[symbol]:
+T + E END
+[input]:
+NUM END 
+[action]
+REDUCE by T->F 
+--------Times of operations:22-------
+[state]:
+6 11 6 1 0 END
+[symbol]:
++ T + E END
+[input]:
+NUM END 
+[action]
+ERROR:缺少运算符号
+SOLUTION:把一个假象的+压入栈
+
+--------Times of operations:23-------
+[state]:
+5 6 11 6 1 0 END
+[symbol]:
+NUM + T + E END
+[input]:
+END 
+[action]
+SHIFT 5
+--------Times of operations:24-------
+[state]:
+3 6 11 6 1 0 END
+[symbol]:
+F + T + E END
+[input]:
+END 
+[action]
+REDUCE by F->NUM 
+--------Times of operations:25-------
+[state]:
+11 6 11 6 1 0 END
+[symbol]:
+T + T + E END
+[input]:
+END 
+[action]
+REDUCE by T->F 
+--------Times of operations:26-------
+[state]:
+0 6 1 0 END
+[symbol]:
+E + E END
+[input]:
+END 
+[action]
+REDUCE by E->E + T 
+--------Times of operations:27-------
+[state]:
+5 0 6 1 0 END
+[symbol]:
+NUM E + E END
+[input]:
+END 
+[action]
+ERROR:缺少运算对象
+SOLUTION:把一个假象的NUM压入栈
+
+--------Times of operations:28-------
+[state]:
+3 0 6 1 0 END
+[symbol]:
+F E + E END
+[input]:
+END 
+[action]
+REDUCE by F->NUM 
+--------Times of operations:29-------
+[state]:
+2 0 6 1 0 END
+[symbol]:
+T E + E END
+[input]:
+END 
+[action]
+REDUCE by T->F 
+--------Times of operations:30-------
+[state]:
+1 0 6 1 0 END
+[symbol]:
+E E + E END
+[input]:
+END 
+[action]
+REDUCE by E->T 
+ACC
