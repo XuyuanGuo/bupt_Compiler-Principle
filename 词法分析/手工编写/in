@@ -1,0 +1,9 @@
+int main() {
+
+        // 以下是一些词法错误    
+        $printf("Hello world");  // '$' 是一个无法识别的字符
+        char a='jj';    //错误的字符常量
+        char *str="Hello,world!     //没有结尾的字符串
+
+        return 0;
+    }

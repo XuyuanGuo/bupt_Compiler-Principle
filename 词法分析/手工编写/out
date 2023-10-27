@@ -1,0 +1,93 @@
+[ROW] 1, [COL] 4
+[TYPE] keyword, [VALUE] int
+
+[ROW] 1, [COL] 9
+[TYPE] id, [VALUE] main
+
+[ROW] 1, [COL] 10
+[TYPE] delimiter, [VALUE] (
+
+[ROW] 1, [COL] 11
+[TYPE] delimiter, [VALUE] )
+
+[ROW] 1, [COL] 13
+[TYPE] delimiter, [VALUE] {
+
+[ROW] 4, [COL] 11
+[TYPE] unknown, [VALUE] $
+
+[ROW] 4, [COL] 17
+[TYPE] id, [VALUE] printf
+
+[ROW] 4, [COL] 18
+[TYPE] delimiter, [VALUE] (
+
+[ROW] 4, [COL] 31
+[TYPE] string, [VALUE] "Hello world"
+
+[ROW] 4, [COL] 32
+[TYPE] delimiter, [VALUE] )
+
+[ROW] 4, [COL] 33
+[TYPE] delimiter, [VALUE] ;
+
+[ROW] 5, [COL] 14
+[TYPE] keyword, [VALUE] char
+
+[ROW] 5, [COL] 16
+[TYPE] id, [VALUE] a
+
+[ROW] 5, [COL] 17
+[TYPE] assignment_op, [VALUE] =
+
+[ROW] 5, [COL] 21
+[TYPE] unknown, [VALUE] '
+
+[ROW] 5, [COL] 22
+[TYPE] delimiter, [VALUE] ;
+
+[ROW] 6, [COL] 14
+[TYPE] keyword, [VALUE] char
+
+[ROW] 6, [COL] 16
+[TYPE] arithmetic_op, [VALUE] *
+
+[ROW] 6, [COL] 19
+[TYPE] id, [VALUE] str
+
+[ROW] 6, [COL] 20
+[TYPE] assignment_op, [VALUE] =
+
+[ROW] 7, [COL] 2
+[TYPE] unknown, [VALUE] 
+
+
+[ROW] 8, [COL] 16
+[TYPE] keyword, [VALUE] return
+
+[ROW] 8, [COL] 18
+[TYPE] oct_num, [VALUE] 0
+
+[ROW] 8, [COL] 19
+[TYPE] delimiter, [VALUE] ;
+
+[ROW] 9, [COL] 7
+[TYPE] delimiter, [VALUE] }
+
+===========Analysis==========
+    [Rows] 8
+    [Characters] 264
+    [Keyword] 4
+    [Number] 1
+    [Character Constant] 0
+    [String Literal] 1
+    [Operator] 3
+    [Delimiter] 9
+    [Identifier] 4
+[ERRORS]
+   !!!ERROR AT 4:11!!!    
+   EXPLAINATION: Unknown symbol.
+   !!!ERROR AT 5:20!!!    
+   EXPLAINATION: Illegal character constant.
+   !!!ERROR AT 7:2!!!    
+   EXPLAINATION: Illegal string literal.

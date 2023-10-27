@@ -1,0 +1,193 @@
+--------Times of operations:0-------
+[stack]:
+END E
+[input]:
+NUM + NUM * NUM + + NUM NUM END 
+
+--------Times of operations:1-------
+[stack]:
+END E_PRIME T
+[input]:
+NUM + NUM * NUM + + NUM NUM END 
+[output]:
+E -> T E_PRIME 
+
+--------Times of operations:2-------
+[stack]:
+END E_PRIME T_PRIME F
+[input]:
+NUM + NUM * NUM + + NUM NUM END 
+[output]:
+T -> F T_PRIME 
+
+--------Times of operations:3-------
+[stack]:
+END E_PRIME T_PRIME NUM
+[input]:
+NUM + NUM * NUM + + NUM NUM END 
+[output]:
+F -> NUM 
+
+--------Times of operations:4-------
+[stack]:
+END E_PRIME T_PRIME
+[input]:
++ NUM * NUM + + NUM NUM END 
+
+--------Times of operations:5-------
+[stack]:
+END E_PRIME
+[input]:
++ NUM * NUM + + NUM NUM END 
+[output]:
+T_PRIME -> EPLISON 
+
+--------Times of operations:6-------
+[stack]:
+END E_PRIME T +
+[input]:
++ NUM * NUM + + NUM NUM END 
+[output]:
+E_PRIME -> + T E_PRIME 
+
+--------Times of operations:7-------
+[stack]:
+END E_PRIME T
+[input]:
+NUM * NUM + + NUM NUM END 
+
+--------Times of operations:8-------
+[stack]:
+END E_PRIME T_PRIME F
+[input]:
+NUM * NUM + + NUM NUM END 
+[output]:
+T -> F T_PRIME 
+
+--------Times of operations:9-------
+[stack]:
+END E_PRIME T_PRIME NUM
+[input]:
+NUM * NUM + + NUM NUM END 
+[output]:
+F -> NUM 
+
+--------Times of operations:10-------
+[stack]:
+END E_PRIME T_PRIME
+[input]:
+* NUM + + NUM NUM END 
+
+--------Times of operations:11-------
+[stack]:
+END E_PRIME T_PRIME F *
+[input]:
+* NUM + + NUM NUM END 
+[output]:
+T_PRIME -> * F T_PRIME 
+
+--------Times of operations:12-------
+[stack]:
+END E_PRIME T_PRIME F
+[input]:
+NUM + + NUM NUM END 
+
+--------Times of operations:13-------
+[stack]:
+END E_PRIME T_PRIME NUM
+[input]:
+NUM + + NUM NUM END 
+[output]:
+F -> NUM 
+
+--------Times of operations:14-------
+[stack]:
+END E_PRIME T_PRIME
+[input]:
++ + NUM NUM END 
+
+--------Times of operations:15-------
+[stack]:
+END E_PRIME
+[input]:
++ + NUM NUM END 
+[output]:
+T_PRIME -> EPLISON 
+
+--------Times of operations:16-------
+[stack]:
+END E_PRIME T +
+[input]:
++ + NUM NUM END 
+[output]:
+E_PRIME -> + T E_PRIME 
+
+--------Times of operations:17-------
+[stack]:
+END E_PRIME T
+[input]:
++ NUM NUM END 
+
+ERROR: 分析栈栈顶为T，当前输入符号为+，分析表为空
+SOLUTION: 弹出栈顶符号T
+
+--------Times of operations:18-------
+[stack]:
+END E_PRIME T +
+[input]:
++ NUM NUM END 
+[output]:
+E_PRIME -> + T E_PRIME 
+
+--------Times of operations:19-------
+[stack]:
+END E_PRIME T
+[input]:
+NUM NUM END 
+
+--------Times of operations:20-------
+[stack]:
+END E_PRIME T_PRIME F
+[input]:
+NUM NUM END 
+[output]:
+T -> F T_PRIME 
+
+--------Times of operations:21-------
+[stack]:
+END E_PRIME T_PRIME NUM
+[input]:
+NUM NUM END 
+[output]:
+F -> NUM 
+
+--------Times of operations:22-------
+[stack]:
+END E_PRIME T_PRIME
+[input]:
+NUM END 
+
+ERROR: 分析栈栈顶为T_PRIME，当前输入符号为NUM，分析表为空
+SOLUTION: 右移输入缓冲区指针，当前输入缓冲区为:END 
+
+--------Times of operations:23-------
+[stack]:
+END E_PRIME
+[input]:
+END 
+[output]:
+T_PRIME -> EPLISON 
+
+--------Times of operations:24-------
+[stack]:
+END
+[input]:
+END 
+[output]:
+E_PRIME -> EPLISON 
+
+--------Times of operations:25-------
+[stack]:
+[input]:
+END 
+

@@ -1,0 +1,73 @@
+[LOCATION] 3:1
+[TYPE] KEYWORD, [VALUE] int
+
+[LOCATION] 3:4
+[TYPE] ID, [VALUE] main
+
+[LOCATION] 3:8
+[TYPE] DELIMITER, [VALUE] (
+
+[LOCATION] 3:9
+[TYPE] DELIMITER, [VALUE] )
+
+[LOCATION] 3:10
+[TYPE] DELIMITER, [VALUE] {
+
+[LOCATION] 6:1
+[TYPE] KEYWORD, [VALUE] int
+
+[LOCATION] 6:4
+[TYPE] ILLEGAL_ID, [VALUE] 12y
+
+[LOCATION] 6:7
+[TYPE] OPERATOR, [VALUE] =
+
+[LOCATION] 6:8
+[TYPE] NUMBER, [VALUE] 10
+
+[LOCATION] 6:10
+[TYPE] DELIMITER, [VALUE] ;
+
+[LOCATION] 7:11
+[TYPE] UNKNOWN, [VALUE] $
+
+[LOCATION] 7:12
+[TYPE] ID, [VALUE] printf
+
+[LOCATION] 7:18
+[TYPE] DELIMITER, [VALUE] (
+
+[LOCATION] 7:19
+[TYPE] STRING, [VALUE] "Hello world"
+
+[LOCATION] 7:32
+[TYPE] DELIMITER, [VALUE] )
+
+[LOCATION] 7:33
+[TYPE] DELIMITER, [VALUE] ;
+
+[LOCATION] 9:1
+[TYPE] KEYWORD, [VALUE] return
+
+[LOCATION] 9:7
+[TYPE] NUMBER, [VALUE] 0
+
+[LOCATION] 9:8
+[TYPE] DELIMITER, [VALUE] ;
+
+[LOCATION] 10:1
+[TYPE] DELIMITER, [VALUE] }
+
+===========Analysis==========
+    [Rows] 10
+    [Characters] 52
+    [Keyword] 3
+    [Number] 2
+    [Character Constant] 0
+    [String Literal] 1
+    [Operator] 2
+    [Delimiter] 1
+    [Identifier] 9
+    [ERRORS]
+   !!!ERROR AT 6:4!!!    
+   !!!ERROR AT 7:11!!!    

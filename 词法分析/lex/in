@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main() {
+
+    // 以下是一些词法错误
+    int 12y = 10;  // 变量名不能以数字开始    
+    $printf("Hello world");  // '$' 是一个无法识别的字符
+
+    return 0;
+}
